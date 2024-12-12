@@ -141,41 +141,42 @@
     <tr onmouseout="SRD_stop()" onmouseover="SRD_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='SRD_image'><img src='images/SRD.gif'></div>
-          <img src='images/SRD.png'>
+          <div class="two" id='SRD_image'><img src='images/SRD.png'></div>
+          <div class="two" id='SRD_gif'><img src='images/SRD.gif'></div>
         </div>
         <script type="text/javascript">
-          function jump_start() {
+          function SRD_start() {
             document.getElementById('SRD_image').style.opacity = "1";
+            document.getElementById('SRD_gif').style.opacity = "0"; // SRD.gif 투명화
           }
-
-          function jump_stop() {
+    
+          function SRD_stop() {
             document.getElementById('SRD_image').style.opacity = "0";
+            document.getElementById('SRD_gif').style.opacity = "1"; // SRD.gif 원래 상태로
           }
-          jump_stop()
+          SRD_stop();
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <span class="papertitle">Respect the model: Fine-grained and Robust Explanation with Sharing Ratio Decomposition      
         </span>
-          </a>
-          <br>
-          <a href="https://scholar.google.com/citations?user=Xe9KzXgAAAAJ&hl"><strong>Sangyu Han*</strong></a>,
-          <a href="https://scholar.google.com.hk/citations?user=nS8vgAQAAAAJ&hl=it">Yearim Kim*</a>, 
-          <a href="https://scholar.google.com/citations?user=h_8-1M0AAAAJ&hl">Nojun Kwak</a>.
-          <br>
-          <em>ICLR</em>, 2024
-          <br>
-          <a href="https://arxiv.org/abs/2402.03348">arXiv</a>
-          <p></p>
-          <p>
-            We propose SRD (Sharing Ratio Decomposition), a robust XAI method that faithfully reflects a model's inference process by analyzing nonlinear interactions between filters from a vector perspective. 
-            Additionally, we introduce APOP (Activation-Pattern-Only Prediction) to redefine relevance, incorporating both active and inactive neurons. 
-            SRD enables recursive decomposition of feature vectors, providing high-resolution receptive fields and enhancing interpretability and robustness in model explanations.
-  
-          </p>
-        </td>
+        <br>
+        <a href="https://scholar.google.com/citations?user=Xe9KzXgAAAAJ&hl"><strong>Sangyu Han*</strong></a>,
+        <a href="https://scholar.google.com.hk/citations?user=nS8vgAQAAAAJ&hl=it">Yearim Kim*</a>, 
+        <a href="https://scholar.google.com/citations?user=h_8-1M0AAAAJ&hl">Nojun Kwak</a>.
+        <br>
+        <em>ICLR</em>, 2024
+        <br>
+        <a href="https://arxiv.org/abs/2402.03348">arXiv</a>
+        <p></p>
+        <p>
+          We propose SRD (Sharing Ratio Decomposition), a robust XAI method that faithfully reflects a model's inference process by analyzing nonlinear interactions between filters from a vector perspective. 
+          Additionally, we introduce APOP (Activation-Pattern-Only Prediction) to redefine relevance, incorporating both active and inactive neurons. 
+          SRD enables recursive decomposition of feature vectors, providing high-resolution receptive fields and enhancing interpretability and robustness in model explanations.
+        </p>
+      </td>
     </tr>
+    
 
 
     
